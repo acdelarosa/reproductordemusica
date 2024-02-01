@@ -1,18 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap')
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body{
+max-width: 1200px;
+margin:auto
+}
+
+:root{
+
+}
 .todo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 1px;
 }
 /* BUSCADOR */
 
+/*botonsearch{
+    margin-top: 5px;
+}
 .buscadorylistas{
-    border: 2px solid black;
+    border: solid black;
+    display: block;
+
+  
+}
+.buscador{
+    display: block;
+    padding-left: 10%;
+    background-color: grey;
+    
 }
 .lupa {
     width: fit-content;
@@ -20,10 +42,12 @@
     z-index: 45;
     bottom: 30%;
     left: 950px;
+    
 }
 
 
 .search {
+    margin-top: 10%;
     background-color: transparent;
     height: 100%;
     width: 300px;
@@ -46,9 +70,35 @@
     z-index: 89;
     width: 20px;
     height: 20px;
-}
+}*/
 
 
+.buscador {
+    
+    background-color: blueviolet;
+    justify-content: center;
+
+    input {
+        position: relative;
+      outline: none;
+      padding: 12px 1rem 12px 4rem;
+      font-size: 1rem;
+      border: 1px solid black;
+      border-radius: 24px;
+      width: auto;
+      margin-top: 5%;
+    }
+
+        i {
+        position: absolute!important;
+        z-index: 1;
+        color: grey;
+        font-size: 1.4rem;
+        top: 50%;
+        left:0%
+        
+        }
+  }
 
 
 
@@ -62,22 +112,94 @@
 
 .coveralbum{
     background-image: url(./img/fondoreproductor.jpg);
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 270px;
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 
-/* descripción */
-.descripción{
-    background-color: aqua;
+.Descripcion{
+    display: block;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 10px 30px 10px;
 }
+
 
 /* BOTONES */
 .botones{
-    display: inline block;
-    align-self: center;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
+.botones{
+    li{
+        padding: 10px;
+    }
+}
 
+.filtrodebusqueda{
+    display: block;
+    margin: 10%;
+    width: 400px;
+    border: black solid 1px;
+    padding: 15px;
+}
 
+.Playlists{
+    display: block;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 400px;
+    border: black solid 1px;
+    padding: 15px;
+    
+}
+.cancion{
+    list-style: none;
+    display: flex;
+}
+.cancion span{
+    margin-right: 50%;
+}
+.listabusqueda{
+    height: 100px;
+    overflow-y: auto;
+    display: block;
+    margin-top: 2%;
+}
+.listaplaylist{
+    height: 100px;
+    overflow-y: auto;
+    display: block;
+    margin-top: 2%;
+} 
+
+.listafavoritos{
+    height: 100px;
+    overflow-y: auto;
+    display: block;
+    margin-top: 2%;
+}
+.favorito{
+    display: block;
+    margin: 10%;
+    margin-top: 2%;
+    width: 400px;
+    border: black solid 1px;
+    padding: 15px;
+}
+
+ul li:hover{
+    background-color:lightpink;
+}
