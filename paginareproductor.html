@@ -16,8 +16,26 @@
 
 </head>
 
-<body>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="reproductor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
     <head>
         <h1>
             Reproductor de Música 7 
@@ -29,9 +47,9 @@
         <div class="buscadorylistas">
 
             <div class="buscador">
-                <input type="text" placeholder="Canción" class="search" />
+                <input  id= "input" type="text" placeholder="Canción" />
 
-                <button class="botonsearch"> Search </button>
+                <button id="buscar"> Search </button>
 
 
             </div>
@@ -40,16 +58,19 @@
                 <div class="filtrodebusqueda">
                     <h2>Busqueda</h2>
 
-                    <ul>
+                    <ul id="lista">
                         <li class="cancion">Canción 1 <a href="play"><i class="fa fa-play" aria-hidden="true"> </i> </a>
-                            <a href="favorite"><i class="fa fa-heart" aria-hidden="true"></i> </a> <a href="plus"><i
-                                    class="fa fa-plus" aria-hidden="true"></i> </a></li>
+                            <a href="favorite"><i class="fa fa-heart" aria-hidden="true"></i> </a> <a href="trash"><i
+                                    class="fa fa-trash" aria-hidden="true"></i></a> </li>
                         <li class="cancion">Canción 2 <a href="play"><i class="fa fa-play" aria-hidden="true"> </i> </a>
-                            <a href="favorite"><i class="fa fa-heart" aria-hidden="true"></i> </a> <a href="plus"><i
-                                    class="fa fa-plus" aria-hidden="true"></i> </a></li>
+                            <a href="favorite"><i class="fa fa-heart" aria-hidden="true"></i> </a> <a href="trash"><i
+                                    class="fa fa-trash" aria-hidden="true"></i></a> </li>
                         <li class="cancion">Canción 3 <a href="play"><i class="fa fa-play" aria-hidden="true"> </i> </a>
-                            <a href="favorite"><i class="fa fa-heart" aria-hidden="true"></i> </a> <a href="plus"><i
-                                    class="fa fa-plus" aria-hidden="true"></i> </a></li>
+                            <a href="favorite"><i class="fa fa-heart" aria-hidden="true"></i> </a> <a href="trash"><i
+                                    class="fa fa-trash" aria-hidden="true"></i></a> </li>
+
+                        
+                                    
                     </ul>
                 </div>
 
@@ -120,7 +141,7 @@
 
         </div>
     </div>
-
+    <script src= "./reproductor.js"></script>
 </body>
 
 </html>
