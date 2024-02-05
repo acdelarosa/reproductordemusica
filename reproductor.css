@@ -1,116 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap')
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-max-width: 1200px;
-margin:auto
+body {
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(blue, pink);
+    background-image: url(./img/constelaciones.jpg);
 }
 
-:root{
-
+h1 {
+    font-family: lobster;
+    color: pink;
+   background: -webkit-linear-gradient(pink,lightpink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 3.5em;
+  /*  -webkit-text-stroke: 0.4px #f5f4f4;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;  */
+    opacity: 0.8;
 }
-.todo{
+
+.todo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
+    background: linear-gradient(pink, rgb(79, 79, 192));
+    opacity: 0.8;
+    border: white 2px solid;
 }
+
 /* BUSCADOR */
 
-/*botonsearch{
-    margin-top: 5px;
-}
 .buscadorylistas{
-    border: solid black;
-    display: block;
-
-  
+    border: white;
 }
-.buscador{
-    display: block;
-    padding-left: 10%;
-    background-color: grey;
-    
-}
-.lupa {
-    width: fit-content;
-    position: relative;
-    z-index: 45;
-    bottom: 30%;
-    left: 950px;
-    
-}
-
-
-.search {
-    margin-top: 10%;
-    background-color: transparent;
-    height: 100%;
-    width: 300px;
-    border: rgb(80, 63, 63) solid 1px;
-    border-radius: 100px;
-    color: rgb(51, 41, 41);
-    padding: 8px 24px;
-}
-
-.search::placeholder {
-    color: rgb(126, 103, 103);
-}
-
-.imglupa {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(-30px, -50%);
-    cursor: pointer;
-    z-index: 89;
-    width: 20px;
-    height: 20px;
-}*/
-
 
 .buscador {
-    
-    background-color: blueviolet;
+
+    position: absolute;
     justify-content: center;
+    align-self: center;
+    padding-bottom: 15px;
+}
 
-    input {
-        position: relative;
-      outline: none;
-      padding: 12px 1rem 12px 4rem;
-      font-size: 1rem;
-      border: 1px solid black;
-      border-radius: 24px;
-      width: auto;
-      margin-top: 5%;
-    }
+i {
+    position: absolute !important;
+    z-index: 1;
+    color: grey;
+    font-size: 1.4rem;
+    top: 50%;
+    left: 0%;
+    display: grid;
+    gap: 15px;
+}
 
-        i {
-        position: absolute!important;
-        z-index: 1;
-        color: grey;
-        font-size: 1.4rem;
-        top: 50%;
-        left:0%
-        
-        }
-  }
+#input {
+    position: relative;
+    outline: none;
+    padding: 12px 1rem 12px 4rem;
+    font-size: 1rem;
+    border: 1px solid rgb(241, 240, 240);
+    border-radius: 24px;
+    width: auto;
+    margin-top: 5%;
+}
+
+/* FIN DE BUSCADOR */
 
 
+/* TÍTULOS DE CANCIONES */
+h2 {
+    font-family: protest riot;
+    color: white;
+    font-size: 1.8em;
+   /*  -webkit-text-stroke: 0.5px #cfbcbc;
+    margin-block-start: 3em;
+    margin-block-end: 0.65em; */
+}
 
 
 /* LISTAS DE REPRODUCCIÓN */
 
-.reproductor{
-    border: 2px black solid;
-}
-/* cover album */
 
-.coveralbum{
+.listasdereproduccion{
+    top: 40px;
+    position: relative;
+}
+
+.filtrodebusqueda {
+    display: block;
+    margin: 10%;
+    width: 400px;
+    border: rgb(241, 238, 238) solid 1px;
+    padding: 15px;
+}
+
+.Playlists {
+    display: block;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 400px;
+    border: rgb(226, 220, 220) solid 1px;
+    padding: 15px;
+
+}
+ 
+a{
+    color: lightsalmon;
+}
+.cancion {
+    list-style: none;
+    display: flex;
+    color: lightsalmon;
+    font-size: 1.2em;
+    -webkit-text-stroke: 0.5px #ffff;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.65em;
+}
+
+.cancion span {
+    margin-right: 50%;
+}
+
+.listabusqueda {
+    height: 100px;
+    overflow-y: auto;
+    display: block;
+    margin-top: 2%;
+}
+
+.listaplaylist {
+    height: 100px;
+    overflow-y: auto;
+    display: block;
+    margin-top: 2%;
+}
+
+.listafavoritos {
+    height: 100px;
+    overflow-y: auto;
+    display: block;
+    margin-top: 2%;
+}
+
+.favorito {
+    display: block;
+    margin: 10%;
+    margin-top: 2%;
+    width: 400px;
+    border: rgb(240, 231, 231) solid 1px;
+    padding: 15px;
+}
+
+ul li:hover {
+    background-color: lightpink;
+}
+
+/* FIN DE LISTAS DE REPRODUCCION */
+
+/* INICIO DE REPRODUCCION */
+
+.reproductor {
+    border-left: 2px solid white;
+   }
+
+/* cover album  CANCION*/
+
+.coveralbum {
     background-image: url(./img/fondoreproductor.jpg);
     width: 400px;
     height: 270px;
@@ -120,86 +180,39 @@ margin:auto
     margin-top: 10%;
     background-size: contain;
     background-repeat: no-repeat;
-    
+ 
+
 }
 
-.Descripcion{
+/* DESCRIPCIÓN DE CANCIÓN */
+.Descripción {
     display: block;
     margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
     padding: 10px 10px 30px 10px;
+    font-family: protest riot;
+    color: white;
+    font-size: 1.4em;
 }
 
 
-/* BOTONES */
-.botones{
+/* BOTONES DE REPRODUCCION*/
+
+.botones {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    display: flex;
+    display: grid;
     list-style: none;
     justify-content: center;
+    gap: 10px;
 }
 
-.botones{
-    li{
+.botones {
+    li {
+
         padding: 10px;
+        gap: 10px;
     }
-}
-
-.filtrodebusqueda{
-    display: block;
-    margin: 10%;
-    width: 400px;
-    border: black solid 1px;
-    padding: 15px;
-}
-
-.Playlists{
-    display: block;
-    margin-left: 10%;
-    margin-top: 2%;
-    width: 400px;
-    border: black solid 1px;
-    padding: 15px;
-    
-}
-.cancion{
-    list-style: none;
-    display: flex;
-}
-.cancion span{
-    margin-right: 50%;
-}
-.listabusqueda{
-    height: 100px;
-    overflow-y: auto;
-    display: block;
-    margin-top: 2%;
-}
-.listaplaylist{
-    height: 100px;
-    overflow-y: auto;
-    display: block;
-    margin-top: 2%;
-} 
-
-.listafavoritos{
-    height: 100px;
-    overflow-y: auto;
-    display: block;
-    margin-top: 2%;
-}
-.favorito{
-    display: block;
-    margin: 10%;
-    margin-top: 2%;
-    width: 400px;
-    border: black solid 1px;
-    padding: 15px;
-}
-
-ul li:hover{
-    background-color:lightpink;
 }
