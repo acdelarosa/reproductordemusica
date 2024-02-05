@@ -111,6 +111,7 @@ h2 {
  
 a{
     color: lightsalmon;
+    
 }
 .cancion {
     list-style: none;
@@ -157,7 +158,26 @@ a{
 }
 
 ul li:hover {
-    background-color: lightpink;
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover{
+    color: black; 
+}
+
+#buscar:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: lightgreen;
+    
+}
+
+#input:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: lightgreen;
 }
 
 /* FIN DE LISTAS DE REPRODUCCION */

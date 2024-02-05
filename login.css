@@ -34,3 +34,22 @@ body {
     background: linear-gradient(blue, pink);
     background-image: url(./img/constelaciones.jpg);
 }
+
+.submit:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: lightgreen;
+    
+}
+
+.text:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: lightgreen;
+}
+
+.contraseña:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: lightgreen;
+}
