@@ -226,7 +226,8 @@ a:hover{
     display: grid;
     list-style: none;
     justify-content: center;
-    gap: 10px;
+    gap: 0.5px;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
 }
 
 .botones {
