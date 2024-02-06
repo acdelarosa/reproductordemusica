@@ -11,6 +11,17 @@ body {
     background-image: url(./img/constelaciones.jpg);
 }
 
+header{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+}
+
+#logincircle{
+    color: #fff;
+    size: 1em;
+    
+}
+
 h1 {
     font-family: lobster;
     color: pink;
