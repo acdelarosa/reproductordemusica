@@ -22,6 +22,10 @@ h1 {
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;  */
     opacity: 0.8;
+    align-self: center;
+    display: grid;
+    place-content: center;
+  
 }
 
 .todo {
@@ -31,6 +35,7 @@ h1 {
     background: linear-gradient(pink, rgb(79, 79, 192));
     opacity: 0.8;
     border: white 2px solid;
+    border-radius: 1%;
 }
 
 /* BUSCADOR */
@@ -45,6 +50,10 @@ h1 {
     justify-content: center;
     align-self: center;
     padding-bottom: 15px;
+    /* align-self: center;
+    display: grid;
+    place-content: center; */
+    place-content: center;
 }
 
 i {
@@ -80,6 +89,7 @@ h2 {
    /*  -webkit-text-stroke: 0.5px #cfbcbc;
     margin-block-start: 3em;
     margin-block-end: 0.65em; */
+   
 }
 
 
@@ -116,11 +126,11 @@ a{
 .cancion {
     list-style: none;
     display: flex;
-    color: lightsalmon;
+    color: rgb(240, 233, 230);
     font-size: 1.2em;
-    -webkit-text-stroke: 0.5px #ffff;
+  /*   -webkit-text-stroke: 0.5px #ffff;
     margin-block-start: 0.6em;
-    margin-block-end: 0.65em;
+    margin-block-end: 0.65em; */
 }
 
 .cancion span {
