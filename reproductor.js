@@ -51,9 +51,14 @@ class CatalogoDeCanciones {
      new Song ("Attention","Charlie Puth", "3:32", "Voicenotes", "Pop Rock", "2017", '.album/14album.jpg','.canciones/6.mp3'),
      new Song ("Dreamers","	Jungkook & RedOne", "3:21", "FIFA World Cup 2022", " K-pop, Pop", "2022", '.album/15album.jpg','.canciones/7.mp3'),
      new Song ("Sofía","Alvaro Soler", "3:33", "Eterno agosto", "Pop", "2016", '.album/16album.jpg','.canciones/8.mp3'),
-       
-     
-
+     new Song ("Desde Cuando","Alejandro Sanz", "3:57", "Paraiso Express", "Pop", "2009", '.album/17album.jpg','.canciones/9.mp3'), 
+     new Song ("La media Vuelta","Luis Miguel", "2:41", "Segundo Romance", "Bolero Ranchero", "1994", '.album/18album.jpg','.canciones/10.mp3'),  
+     new Song ("Hasta que me olvides","Luis Miguel", "4:41", "Segundo Romance", "Pop", "1994", '.album/18album.jpg','.canciones/11.mp3'), 
+     new Song ("You are not alone","Michael Jackson", "5:45", "HIStory: Past, Present and Future, Book I", "Pop", "1995", '.album/19album.jpg','.canciones/12.mp3'), 
+     new Song ("Creo en mi","Natalia Jimenez", "3:48", "Creo en mi", "Pop latino", "2015", '.album/20album.jpg','.canciones/13.mp3'), 
+     new Song ("Nunca es suficiente","Angeles azules", "4:26", "aEsto si es cumbia", "Cumbia", "2018", '.album/21album.jpg','.canciones/41.mp3'), 
+     new Song ("Don't stop me now","Queen", "3:29", "Jazz", "Pop rock", "1978", '.album/22album.jpg','.canciones/15.mp3'), 
+     new Song ("We Will Rock You ","Queen", "2:01", "Jazz", "Pop rock", "1978", '.album/22album.jpg','.canciones/16.mp3'), 
     ]
   }
 }
