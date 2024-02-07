@@ -59,6 +59,14 @@ class CatalogoDeCanciones {
      new Song ("Nunca es suficiente","Angeles azules", "4:26", "aEsto si es cumbia", "Cumbia", "2018", '.album/21album.jpg','.canciones/41.mp3'), 
      new Song ("Don't stop me now","Queen", "3:29", "Jazz", "Pop rock", "1978", '.album/22album.jpg','.canciones/15.mp3'), 
      new Song ("We Will Rock You ","Queen", "2:01", "Jazz", "Pop rock", "1978", '.album/22album.jpg','.canciones/16.mp3'), 
+     new Song ("Que se parezca a ti","Tiago PZK", "3:04", "Portales", "Urbano Latino", "2022", '.album/1album.jpg','.canciones/17.mp3'), 
+     new Song ("Bemaste","Tiago PZK", "2:21", "Portales", "Urbano Latino", "2022", '.album/1album.jpg','.canciones/18.mp3'), 
+     new Song ("Yesterday","The Beatles", "1:59", "Help!", "Chamber Pop", "1965", '.album/2album.jpg','.canciones/19.mp3'),
+     new Song ("Mamichula","Nicki Nicole", "3:38", "Atrevido", "Trap Latino", "2020", '.album/3album.jpg','.canciones/20.mp3'), 
+     new Song ("Take me to church","Hozier", "4:16", "Take me to church", "Soul", "2014", '.album/4album.jpg','.canciones/21.mp3'),
+     new Song ("CNV vol 30","Pure Negga x Rastachai", "4:13", "CNV Vol 30", "Reggae", "2021", '.album/5album.jpg','.canciones/22.mp3'),
+     new Song ("Let your hair down","Magic!", "4:28", "Don't Kill the magic", "Pop", "2014", '.album/6album.jpg','.canciones/23.mp3'),
+     new Song ("Medicine","The pretty reckless", "3:17", "Make me wanna die", "Hard Rock", "2010", '.album/7album.jpg','.canciones/24.mp3'),
     ]
   }
 }
