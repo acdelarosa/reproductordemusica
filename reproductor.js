@@ -20,28 +20,26 @@ boton.addEventListener('click', function () {
   }
 });
 
-class Song{
+class Song {
   constructor(nombre, autor, duración, album, año, género, cover, urlSong) {
-    this.nombre=nombre;
-  this.autor=autor;
-  this.duración=duración;
-  this.album=album;
-  this.año=año;
-  this.género=género;
-  this.cover=cover;
-  this.urlSong=urlSong;
+    this.nombre = nombre;
+    this.autor = autor;
+    this.duracion = duración;
+    this.album = album;
+    this.año = año;
+    this.genero = género;
+    this.cover = cover;
+    this.urlSong = urlSong;
   }
-  
- 
-  getSongNameAndAlbum() {
-    return '${this.nombre} - ${this.autor} - ${this.duracion} - ${this.album}- ${this.genero}- ${this.año}'
-      }
 
-  }
+  getSongNameAndAlbum() {
+    return `${this.nombre} - ${this.autor} - ${this.duracion} - ${this.album} - ${this.genero} - ${this.año}`;
+  }
+}
 
 class CatalogoDeCanciones {
-  constructor () {
-    this.CatalogoDeCanciones=[
+  constructor() {
+    this.CatalogoDeCanciones =  [
      // new Song ("cancion1","autor1", "duracion1", "album1", "genero1", "año1", '.album/1album.jpg','.canciones/1.mp3'), 
      new Song ("Flowers","Miley Cyrus", "3:21", "Endless Summer Vacation", "Pop", "2023", '.album/9album.jpg','.canciones/1.mp3'), 
      new Song ("Yeah!","Usher", "2:41", "Confessions", "Crunk&B", "2004", '.album/10album.jpg','.canciones/2.mp3'),
@@ -68,9 +66,17 @@ class CatalogoDeCanciones {
      new Song ("Let your hair down","Magic!", "4:28", "Don't Kill the magic", "Pop", "2014", '.album/6album.jpg','.canciones/23.mp3'),
      new Song ("Medicine","The pretty reckless", "3:17", "Make me wanna die", "Hard Rock", "2010", '.album/7album.jpg','.canciones/24.mp3'),
     ]
+    this.mostrarcanciones ();
+  
   }
 }
+  
 
+class PlayList {
 
+}
+class Reproductor {
+
+}
 
 
