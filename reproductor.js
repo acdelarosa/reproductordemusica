@@ -65,6 +65,12 @@ class CatalogoDeCanciones {
      new Song ("CNV vol 30","Pure Negga x Rastachai", "4:13", "CNV Vol 30", "Reggae", "2021", '.album/5album.jpg','.canciones/22.mp3'),
      new Song ("Let your hair down","Magic!", "4:28", "Don't Kill the magic", "Pop", "2014", '.album/6album.jpg','.canciones/23.mp3'),
      new Song ("Medicine","The pretty reckless", "3:17", "Make me wanna die", "Hard Rock", "2010", '.album/7album.jpg','.canciones/24.mp3'),
+     new Song ("Diamons", "Rihanna", "3:45", "Unapologetic", "Pop", "2012", '.album/25album.jpg','.canciones/25.mp3')
+     new Song ("Viva la vida", "Coldplay","4:01","Viva la vida", "Pop", "2008",'.album/26album.jpg','.canciones/26.mp3'),
+     new Song ("Take on me", "A-ha", "4:04", "Hunting high and low", "Alternative", "1985", '.album/27album.jpg','.canciones/27.mp3'),
+     new Song ("Dusk till down", "Zayn & Sia", "3:55", "Dusk Till Down", "Pop", "2017",'.album/28album.jpg','.canciones/28.mp3'),
+     new Song ("Señorita","Shawn Mendes & Camila Cabello", "3:25", "Latin Pop", "2019", '.album/29album.jpg','.canciones/29.mp3'),
+     new Song ("Empire States of Mind", "Alicia Keys", "3:29", "The Element of freedom", "R&B/Soul","2009",'.album/30album.jpg','.canciones/30.mp3')
     ]
     this.mostrarcanciones ();
   
