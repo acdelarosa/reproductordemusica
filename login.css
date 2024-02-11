@@ -32,7 +32,7 @@ body {
     max-width: 1200px;
     margin: auto;
     background: linear-gradient(blue, pink);
-    background-image: url(./img/constelaciones.jpg);
+  
 }
 
 .submit:hover{
