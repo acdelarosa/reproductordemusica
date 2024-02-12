@@ -38,11 +38,11 @@ export class Favorites {
     )
   }
 
-  getActualCancion(i) {
+  getActualSong(i) {
     return this.listaDeCanciones[i];
   }
 
-  nextSong() {
+  adelantarCancion() {
     this.listaDeCanciones.shift();
   }
 }
