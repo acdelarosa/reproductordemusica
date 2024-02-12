@@ -8,7 +8,7 @@ const usuarios = {
             "username": "usuario1",
             "password": "contrasena2"
         }
-        
+
 
     ]
 }
@@ -28,13 +28,13 @@ btnLogin.addEventListener('click',function(){
     if(user){
 
          // Usuario encontrado y contraseña correcta
-         window.location.href = "./paginareproductor.html";   // Redirecciona a la paginareproductor.html
+         window.location.href = "../paginareproductor.html";   // Redirecciona a la paginareproductor.html
     }else{
         // Usuario no encontrado o contraseña incorrecta
         alert('Usuario o contraseña incorrecta.');
     }
 
-   
-  
-       
+
+
+
 })

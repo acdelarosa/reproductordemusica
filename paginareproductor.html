@@ -1,142 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="reproductor.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Satisfy&display=swap" rel="stylesheet">
-
-</head>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="reproductor.css">
+    <link rel="stylesheet" type="text/css" href="./css/reproductor.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&family=Satisfy&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-          </svg>
-
+            href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+         viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+    </svg>
 </head>
-
 <body>
-
-    <header>
-        <h1>
-            Reproductor
-        </h1>
-        <a href="./login.html" id="logincircle"> <i class="bi bi-person-circle"></i></a>
-    </header>
-    <div class="todo">
-        <!-- buscador -->
-
-        <div class="buscadorylistas">
-
-            <div class="buscador">
-
-                <input id="input" type="text" placeholder="Canción" />
-
-                <button id="buscar"> Search </button>
-
-
-            </div>
-
-            <div class="listasdereproduccion">
-                <div class="filtrodebusqueda">
-                    <h2>Busqueda</h2>
-
-                    <div id="lista" class="lista"></div> 
-                    
-
-
-
-                
-                </div>
-
-                <div id= playlist class="Playlists">
-                    <h2>Playlists</h2>
-                    <div class="Playlists1"></div>
-                    
-                       
-                </div>
-
-                <div id="favoritos" class="favorito">
-                    <h2>Favoritos</h2>
-                    <div id="favoritos">
-
-                    </div>
-                        
-                </div>
-            </div>
-
+<header>
+    <h1>
+        Reproductor
+    </h1>
+    <a href="./login.html" id="logincircle"> <i class="bi bi-person-circle"></i></a>
+</header>
+<div class="todo">
+    <!-- buscador -->
+    <div class="buscadorylistas">
+        <div class="buscador">
+            <input id="input" type="text" placeholder="Canción"/>
+            <button id="buscar"> Search</button>
         </div>
-
-        <!-- REPRODUCTOR -->
-        <div class="reproductor">
-
-
-            <!-- PORTADA -->
-            <div class="coveralbum">
-                <div><img id="portada" src="album/1album.jpg" alt=""></div>
-
+        <div class="listasdereproduccion">
+            <div class="filtrodebusqueda">
+                <h2>Busqueda</h2>
+                <div id="lista" class="lista"></div>
             </div>
-            <!-- DESCRIPCIÓN DE LA CANCIÓN -->
-            <div class="Descripción">
-                <p> <strong>Nombre: </strong></p>
-                <p><strong>Duración: </strong></p>
-                <p> <strong>Album:</strong></p>
-                <p> <strong>Año: </strong></p>
-                <p><strong>Género:</strong></p>
+            <div id=playlist class="Playlists">
+                <h2>Playlists</h2>
+                <div class="Playlists1"></div>
             </div>
-            <!-- BOTONES DE LA CANCIÓN -->
-            <div class="botones">
-
-                <p class="none">
-                </p>
-                <button id="stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
-                <button id="retroceder"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
-                <button id ="play"><i   class="fa fa-play" aria-hidden="true"></i></button>
-                <button id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
-                <button id="adelantar"><i class="fa fa-step-forward" aria-hidden="true"></i</button>
-                <button id="mute"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-                <p >
-                </p>
-
+            <div id="favoritos" class="favorito">
+                <h2>Favoritos</h2>
+                <div id="favoritos1">
+                </div>
             </div>
-
         </div>
     </div>
-    <script src="./reproductor.js"></script>
+    <!-- REPRODUCTOR -->
+    <div class="reproductor">
+        <!-- PORTADA -->
+        <div class="coveralbum">
+            <div><img id="portada" src="./assets/album/1album.jpg" alt=""></div>
+        </div>
+        <!-- DESCRIPCIÓN DE LA CANCIÓN -->
+        <div class="Descripción">
+            <p><strong>Nombre: </strong></p>
+            <p><strong>Duración: </strong></p>
+            <p><strong>Album:</strong></p>
+            <p><strong>Año: </strong></p>
+            <p><strong>Género:</strong></p>
+        </div>
+        <!-- BOTONES DE LA CANCIÓN -->
+        <div class="botones">
+            <p class="none">
+            </p>
+            <button id="stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+            <button id="retroceder"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+            <button id="play" onclick=""><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+            <button id="adelantar"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+            <button id="mute"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+            <p>
+            </p>
+        </div>
+    </div>
+</div>
+<script type="module" src="./src/reproductor.js"></script>
 </body>
-
-</html>
-</body>
-
 </html>
