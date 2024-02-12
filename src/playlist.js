@@ -42,7 +42,7 @@ export class PlayList {
     return this.listaDeCanciones[i];
   }
 
-  nextSong() {
+  adelantarSong() {
     this.listaDeCanciones.shift();
   }
 }
