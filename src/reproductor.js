@@ -1,5 +1,6 @@
 import {Song} from './song.js';
 import {PlayList} from './playlist.js';
+import {Favorites} from "./favoritos.js";
 
 class Reproductor {
   CatalogoDeCanciones;
@@ -8,6 +9,7 @@ class Reproductor {
   actualPlaylist;
 
   constructor() {
+    this.favoritos = new Favorites("Mis Favoritos", [], "Aleatorio");
 
     this.CatalogoDeCanciones = [
       // new Song ("id", cancion1","autor1", "duracion1", "album1", "genero1", "año1", '.album/1album.jpg','.canciones/1.mp3'),
@@ -139,7 +141,7 @@ class Reproductor {
   }
 
 
-  play = function () {
+  play () {
 
     if (this.actualSong !== undefined) {
       this.audio.src = "../assets/canciones/" + this.actualSong.urlSong;
@@ -166,7 +168,7 @@ class Reproductor {
 
   }
 
-  pause = function () {
+  pause () {
     let pauseButton = document.getElementById("pause");
     pauseButton.addEventListener('click', () => {
       // Pausar la canción actual
@@ -174,7 +176,7 @@ class Reproductor {
     });
   }
 
-  stop = function () {
+  stop () {
     let actualSong = this.actualSong;
 
     // Assuming the audio element is already created and stored in this.audio
@@ -216,10 +218,36 @@ class Reproductor {
     cover.src = "../assets/album/" + this.actualSong.cover;
   }
 
+  actualizarFavoritosHTML() {
+    const divFavoritos = document.getElementById('favoritos1'); // Asegúrate de que el ID coincida con tu HTML
+    divFavoritos.innerHTML = ''; // Limpia el contenido actual
+
+    this.favoritos.listaDeCanciones.forEach(cancion => {
+      // Asume que cada canción tiene un atributo 'nombre'. Ajusta según tu implementación.
+      const elementoCancion = document.createElement('div');
+      elementoCancion.textContent = cancion.nombre; // Puedes añadir más detalles si lo deseas
+      divFavoritos.appendChild(elementoCancion);
+    });
+  }
+
+  agregarFavorito(idCancion) {
+    const cancion = this.CatalogoDeCanciones.find(cancion => cancion.id === idCancion);
+    if (cancion) {
+      this.favoritos.addSongToPlayList(cancion);
+      console.log(`Agregada a favoritos: ${cancion.nombre}`);
+      this.actualizarFavoritosHTML(); // Actualiza la UI
+    }
+  }
+
+
+
 }
 
 
-let reproductor = new Reproductor();
+document.addEventListener('DOMContentLoaded', (event) => {
+  let reproductor = new Reproductor();
+  window.reproductor = reproductor; // Esto expone 'reproductor' al ámbito global
+});
 
 
 
