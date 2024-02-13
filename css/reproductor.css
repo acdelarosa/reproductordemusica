@@ -18,11 +18,13 @@ header {
 
 #logincircle {
     color: #fff;
-    size: 1em;
-
+    font-size: 1.7em;
 }
 
-
+#logincircle:hover{
+    color: fuchsia;
+    cursor: pointer;
+}
 
 #hearticono:hover {
     color: green;
@@ -115,15 +117,17 @@ h2 {
 
 
 .listasdereproduccion {
-    position: relative;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     height: fit-content;
     gap: 0;
     padding-bottom: 0;
+    height: 1100px;
 }
 
-#titulobusqueda{
+/* all songs */
+
+#titulobusqueda {
     top: 40px;
     margin-bottom: 0;
     margin-left: 35%;
@@ -141,53 +145,88 @@ h2 {
     overflow-y: scroll;
     height: 250px;
     margin-bottom: 0;
-    
+
 
 
 
 }
+
+
+/* SCROLLBAR */
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-.filtrodebusqueda {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* .filtrodebusqueda {
     display: grid;
     grid-template-rows: 1fr 5fr;
 
+} */
+
+
+/* PLAYLIST */
+
+.tituloplaylist {
+    margin-bottom: 0;
+    margin-left: 35%;
+   margin-top: 5%;
 }
 
-
-.Playlists {
+.Playlists1 {
     display: block;
     margin-left: 10%;
-    margin-top: 2%;
     width: 400px;
-    border: rgb(226, 220, 220) solid 1px;
-    padding: 15px;
-
-
-
-}
-
-.playlist1{
+    border: rgb(241, 238, 238) solid 1px;
+    padding: 2%;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: 250px;
+    margin-bottom: 0;
+    margin-top: 5px;
 }
 
+
+/* FAVORITO */
+
+/* FAVORITOS */
+
+.titulofavorito{
+    margin-bottom: 0;
+    margin-left: 35%;
+   
+}
+
+
+#favoritos1 {
+    display: block;
+    margin-left: 10%;
+    width: 400px;
+    border: rgb(241, 238, 238) solid 1px;
+    padding: 2%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 250px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+/* FIN FAVORITO */
 a {
     color: rgb(223, 213, 209);
 
@@ -206,11 +245,12 @@ a {
 
 .cancion span {
     margin-right: 50%;
-    
+
 }
 
-.cancion:hover{
+.cancion:hover {
     background-color: lightgreen;
+    color: black;
 }
 
 .listabusqueda {
@@ -227,22 +267,7 @@ a {
     margin-top: 2%;
 }
 
-.listafavoritos {
-    height: 100px;
-    overflow-y: auto;
-    display: block;
-    margin-top: 2%;
-}
 
-.favorito {
-    display: block;
-    margin: 10%;
-    margin-top: 2%;
-    width: 400px;
-    border: rgb(240, 231, 231) solid 1px;
-    padding: 15px;
-    height: 450px;
-}
 
 ul li:hover {
     background-color: lightgreen;
@@ -269,17 +294,21 @@ a:hover {
 
 /* FIN DE LISTAS DE REPRODUCCION */
 
+
+
 /* INICIO DE REPRODUCCION */
 
 .reproductor {
     border-left: 2px solid white;
+    top: 10%;
+    margin-top: 50px;
 }
 
 /* cover album  CANCION*/
 
 .coveralbum {
     background-image: url(../img/fondoreproductor.jpg);
-    width: 400px;
+    width: 300px;
     height: 270px;
     align-self: center;
     margin-left: auto;
@@ -289,6 +318,12 @@ a:hover {
     background-repeat: no-repeat;
 
 
+}
+
+#portada {
+    width: 400px;
+    height: 270px;
+    align-self: center;
 }
 
 /* DESCRIPCIÓN DE CANCIÓN */
@@ -315,6 +350,36 @@ a:hover {
     justify-content: center;
     gap: 0.5px;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+
+#stop:hover {
+    color: fuchsia;
+    cursor: pointer;
+}
+
+#retroceder:hover {
+    color: fuchsia;
+    cursor: pointer;
+}
+
+#play:hover {
+    color: fuchsia;
+    cursor: pointer;
+}
+
+#pause:hover {
+    color: fuchsia;
+    cursor: pointer;
+}
+
+#adelantar:hover {
+    color: fuchsia;
+    cursor: pointer;
+}
+
+#mute:hover {
+    color: fuchsia;
+    cursor: pointer;
 }
 
 .botones {

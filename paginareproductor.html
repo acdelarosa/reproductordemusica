@@ -32,49 +32,83 @@
         <h1>
             Reproductor
         </h1>
-        <a href="./login.html" id="logincircle"> <i class="bi bi-person-circle"></i></a>
+        <a href="./login.html" id="logincircle"> <i class="fa fa-user" aria-hidden="true"></i></a>
     </header>
     <div class="todo">
         <!-- buscador -->
         <div class="buscadorylistas">
+
+            <!-- search -->
             <div class="buscador">
                 <input id="input" type="text" placeholder="Canción" />
                 <button id="buscar"> Search</button>
             </div>
+
+
+            <!-- lista general de canciones -->
             <div class="listasdereproduccion">
+
+                <!-- all songs -->
                 <div class="filtrodebusqueda">
+                    <!-- titulo -->
                     <div id="titulobusqueda">
-                        <h2>Busqueda</h2>
+                        <h2>Búsqueda</h2>
                     </div>
+                    <!-- list -->
                     <div id="lista" class="lista"></div>
                 </div>
+
+
+
+
+                <!-- Playlist -->
+
                 <div id=playlist class="Playlists">
-                    <div class="tituloplaylist" >
+                    <!-- titulo -->
+                    <div class="tituloplaylist">
                         <h2>Playlists</h2>
                     </div>
+                    <!-- play -->
                     <div class="Playlists1"></div>
                 </div>
+
+
+                <!-- Favoritos -->
+
                 <div id="favoritos" class="favorito">
-                    <h2>Favoritos</h2>
+                    <!-- titulo -->
+                    <div class="titulofavorito">
+                        <h2>Favoritos</h2>
+                    </div>
+                    <!-- fav -->
                     <div id="favoritos1">
                     </div>
                 </div>
             </div>
         </div>
+
+
         <!-- REPRODUCTOR -->
         <div class="reproductor">
+
+
             <!-- PORTADA -->
             <div class="coveralbum">
                 <div><img id="portada" src="./assets/album/1album.jpg" alt=""></div>
             </div>
+
+
             <!-- DESCRIPCIÓN DE LA CANCIÓN -->
             <div class="Descripción">
                 <p><strong>Nombre: </strong></p>
+                <p><strong>Artista: </strong></p>
                 <p><strong>Duración: </strong></p>
                 <p><strong>Album:</strong></p>
                 <p><strong>Año: </strong></p>
                 <p><strong>Género:</strong></p>
             </div>
+
+
             <!-- BOTONES DE LA CANCIÓN -->
             <div class="botones">
                 <p class="none">
