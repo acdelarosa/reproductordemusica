@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+#corazon{
+    cursor: pointer;
+}
 body {
     max-width: 1200px;
     margin: auto;
@@ -18,7 +20,8 @@ header {
 
 #logincircle {
     color: #fff;
-    font-size: 1.7em;
+    size: 1em;
+
 }
 
 #logincircle:hover{

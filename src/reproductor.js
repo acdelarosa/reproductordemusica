@@ -95,6 +95,7 @@ class Reproductor {
       canciones.innerHTML += `<li id="resp1${Song.id}" class="cancion">${Song.nombre}
         <span class="addPlaylist fa fa-play"></span>
         <span class="favoritos fa fa-heart" onclick="reproductor.agregarFavorito(${Song.id})"></span>
+        <span class="fa fa-plus" aria-hidden="true"></span>
         </li>`;
     });
   }
