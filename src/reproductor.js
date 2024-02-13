@@ -134,9 +134,9 @@ class Reproductor {
             <span class="nombre">${Song.nombre}</span>
             <span class="autor">${Song.autor}</span>
             <span class="album">${Song.album}</span>
-            <span class="addPlaylist fa fa-play"></span>
-            <span  id="corazon" class="favoritos fa fa-heart"></span>
-            <span class="fa fa-trash"></span>
+            <span class="duracion">${Song.duracion}</span>
+            <span id="playicono" class="addPlaylist fa fa-play"></span>
+            <span id="hearticono" class="favoritos fa fa-heart"></span>
         </li>`;
     });
   }

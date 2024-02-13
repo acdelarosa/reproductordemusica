@@ -13,12 +13,12 @@ body {
     background-image: url(../img/constelaciones.jpg);
 }
 
-header{
+header {
     display: grid;
     grid-template-columns: 8fr 1fr;
 }
 
-#logincircle{
+#logincircle {
     color: #fff;
     size: 1em;
     z-index: 50;
@@ -26,14 +26,21 @@ header{
 
 }
 
+
+
+#hearticono:hover {
+    color: green;
+}
+
+
 h1 {
     font-family: lobster;
     color: pink;
-   background: -webkit-linear-gradient(pink,lightpink);
+    background: -webkit-linear-gradient(pink, lightpink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3.5em;
-  /*  -webkit-text-stroke: 0.4px #f5f4f4;
+    /*  -webkit-text-stroke: 0.4px #f5f4f4;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;  */
     opacity: 0.8;
@@ -55,7 +62,7 @@ h1 {
 
 /* BUSCADOR */
 
-.buscadorylistas{
+.buscadorylistas {
     border: white;
 }
 
@@ -101,7 +108,7 @@ h2 {
     font-family: protest riot;
     color: white;
     font-size: 1.8em;
-   /*  -webkit-text-stroke: 0.5px #cfbcbc;
+    /*  -webkit-text-stroke: 0.5px #cfbcbc;
     margin-block-start: 3em;
     margin-block-end: 0.65em; */
 
@@ -111,18 +118,63 @@ h2 {
 /* LISTAS DE REPRODUCCIÓN */
 
 
-.listasdereproduccion{
-    top: 40px;
+.listasdereproduccion {
     position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: fit-content;
+    gap: 0;
+    padding-bottom: 0;
 }
 
-.filtrodebusqueda {
+#titulobusqueda{
+    top: 40px;
+    margin-bottom: 0;
+    margin-left: 35%;
+    margin-top: 20%;
+
+}
+
+.lista {
     display: block;
-    margin: 10%;
+    margin-left: 10%;
     width: 400px;
     border: rgb(241, 238, 238) solid 1px;
-    padding: 15px;
+    padding: 2%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 250px;
+    margin-bottom: 0;
+    
+
+
+
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.filtrodebusqueda {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+
+}
+
 
 .Playlists {
     display: block;
@@ -132,24 +184,37 @@ h2 {
     border: rgb(226, 220, 220) solid 1px;
     padding: 15px;
 
+
+
 }
 
-a{
+.playlist1{
+    height: 250px;
+}
+
+a {
     color: rgb(223, 213, 209);
 
 }
+
 .cancion {
     list-style: none;
     display: flex;
     color: rgb(240, 233, 230);
     font-size: 1.2em;
-  /*   -webkit-text-stroke: 0.5px #ffff;
+    cursor: pointer;
+    /*   -webkit-text-stroke: 0.5px #ffff;
     margin-block-start: 0.6em;
     margin-block-end: 0.65em; */
 }
 
 .cancion span {
     margin-right: 50%;
+    
+}
+
+.cancion:hover{
+    background-color: lightgreen;
 }
 
 .listabusqueda {
@@ -180,6 +245,7 @@ a{
     width: 400px;
     border: rgb(240, 231, 231) solid 1px;
     padding: 15px;
+    height: 450px;
 }
 
 ul li:hover {
@@ -188,18 +254,18 @@ ul li:hover {
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     color: black;
 }
 
-#buscar:hover{
+#buscar:hover {
     cursor: pointer;
     color: blueviolet;
     background-color: lightgreen;
 
 }
 
-#input:hover{
+#input:hover {
     cursor: pointer;
     color: blueviolet;
     background-color: lightgreen;
@@ -211,7 +277,7 @@ a:hover{
 
 .reproductor {
     border-left: 2px solid white;
-   }
+}
 
 /* cover album  CANCION*/
 
