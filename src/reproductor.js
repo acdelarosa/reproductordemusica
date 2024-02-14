@@ -10,6 +10,7 @@ class Reproductor {
 
   constructor() {
     this.favoritos = new Favorites("Mis Favoritos", [], "Aleatorio");
+    this.playlist = new PlayList("Mi Playlist", [], "Aleatorio");
 
     this.CatalogoDeCanciones = [
       // new Song ("id", cancion1","autor1", "duracion1", "album1", "genero1", "año1", '.album/1album.jpg','.canciones/1.mp3'),
@@ -93,9 +94,9 @@ class Reproductor {
 
     this.CatalogoDeCanciones.forEach(Song => {
       canciones.innerHTML += `<li id="resp1${Song.id}" class="cancion">${Song.nombre}
-        <span class="addPlaylist fa fa-play"></span>
+        <span class="fa fa-play" aria-hidden="true"></span>
         <span class="favoritos fa fa-heart" onclick="reproductor.agregarFavorito(${Song.id})"></span>
-        <span class="fa fa-plus" aria-hidden="true"></span>
+        <span class="addPlaylist fa fa-plus" onclick="reproductor.agregarAPlaylist(${Song.id})"></span>
         </li>`;
     });
   }
@@ -238,6 +239,25 @@ class Reproductor {
       console.log(`Agregada a favoritos: ${cancion.nombre}`);
       this.actualizarFavoritosHTML(); // Actualiza la UI
     }
+  }
+  agregarAPlaylist(idCancion) {
+    const cancion = this.CatalogoDeCanciones.find(cancion => cancion.id === idCancion);
+    if (cancion) {
+      this.playlist.addSongToPlayList(cancion);
+      console.log(`Agregada a la playlist: ${cancion.nombre}`);
+      this.actualizarPlaylistHTML(); // Asegúrate de implementar este método
+    }
+  }
+
+  actualizarPlaylistHTML() {
+    const divPlaylist = document.getElementById('playlists1'); // Asegúrate de que el ID coincida con tu HTML
+    divPlaylist.innerHTML = ''; // Limpia el contenido actual
+  
+    this.playlist.listaDeCanciones.forEach(cancion => {
+      const elementoCancion = document.createElement('div');
+      elementoCancion.textContent = cancion.nombre; // Puedes añadir más detalles si lo deseas
+      divPlaylist.appendChild(elementoCancion);
+    });
   }
 
 
