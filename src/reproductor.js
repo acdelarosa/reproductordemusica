@@ -78,6 +78,17 @@ class Reproductor {
       this.adelantarCancion();
     });
 
+
+    let mute = document.getElementById('mute');
+    mute.addEventListener('click', () => {
+      if(this.audio.volume===0){
+        this.audio.volume=1
+      }else{
+        this.audio.volume=0
+      }
+      
+    })
+
     let retrocederCancion = document.getElementById('retroceder');
     retrocederCancion.addEventListener('click', () => {
       this.retrocederCancion();
@@ -190,6 +201,16 @@ class Reproductor {
       this.audio = new Audio(actualSong.urlSong);
     }
   }
+
+  mute () {
+
+    if (this.actualSong == this.audio.play) {
+     
+      this.audio.mute()
+     
+      } else {
+      this.audio.unmute()
+    }}  
 
   adelantarCancion() {
     if (this.CatalogoDeCanciones.length > 0) {
