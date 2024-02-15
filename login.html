@@ -18,28 +18,34 @@
 
 <body>
 
-    <form class="ingresar">
+    <form class="ingresar" id="loginForm">
         <div class="bienvenido">
             <p>
                 Bienvenido
             </p>
         </div>
         <br>
-        <div>
-
-            <p id="user"> Usuario: </p>
-            <input class="text" id="userInput" required />
+        <div class="input-icon" id="usuariodiv">
+            <!-- USER -->
+            <!-- <p id="user" > Usuario: </p> -->
+            <input placeholder="Usuario" class="text" id="userInput" required  />
+        </div>
+        <!-- CONTRASEÑA -->
+        <div class="input-icon" id="contrasenadiv">
+            <input type="password" placeholder="Password" id="passwordInput" class="contra" />
+            <i class="fa fa-eye" aria-hidden="true"></i>
         </div>
 
-        <div>
+        <!-- <div>
             <p class="password"> Contraseña: </p>
             <input type="password" class="contraseña" id="passwordInput" required />
-        </div>
+        </div> -->
         <br>
+        <!-- BOTÓN DE BÚSQUEDA -->
         <button type="button" class="submit" id="btnLogin"> Login </button>
     </form>
     <script src="src/login.js"></script>
-
+    
 
 </body>
 
